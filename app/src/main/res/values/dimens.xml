@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="_0dp">0dp</dimen>
+    <dimen name="_1dp">1dp</dimen>
+    <dimen name="_2dp">2dp</dimen>
+    <dimen name="_3dp">3dp</dimen>
+    <dimen name="_4dp">4dp</dimen>
+    <dimen name="_5dp">5dp</dimen>
+    <dimen name="_8dp">8dp</dimen>
+    <dimen name="_10dp">10dp</dimen>
+    <dimen name="_16dp">16dp</dimen>
+    <dimen name="_20dp">20dp</dimen>
+    <dimen name="_24dp">24dp</dimen>
+    <dimen name="_30dp">30dp</dimen>
+    <dimen name="_32dp">32dp</dimen>
+    <dimen name="_40dp">40dp</dimen>
+    <dimen name="_45dp">45dp</dimen>
+    <dimen name="_50dp">50dp</dimen>
+    <dimen name="_55dp">55dp</dimen>
+    <dimen name="_60dp">60dp</dimen>
+    <dimen name="_65dp">65dp</dimen>
+    <dimen name="_70dp">70dp</dimen>
+    <dimen name="_75dp">75dp</dimen>
+    <dimen name="_80dp">80dp</dimen>
+    <dimen name="_85dp">85dp</dimen>
+    <dimen name="_90dp">90dp</dimen>
+    <dimen name="_95dp">95dp</dimen>
+
+    <dimen name="_100dp">100dp</dimen>
+    <dimen name="_110dp">110dp</dimen>
+    <dimen name="_120dp">120dp</dimen>
+    <dimen name="_130dp">130dp</dimen>
+    <dimen name="_150dp">150dp</dimen>
+    <dimen name="_160dp">160dp</dimen>
+    <dimen name="_170dp">170dp</dimen>
+    <dimen name="_180dp">180dp</dimen>
+    <dimen name="_190dp">190dp</dimen>
+
+    <dimen name="_200dp">200dp</dimen>
+    <dimen name="_250dp">250dp</dimen>
+    <dimen name="_300dp">300dp</dimen>
+    <dimen name="_350dp">350dp</dimen>
+    <dimen name="_400dp">400dp</dimen>
+    <dimen name="_450dp">450dp</dimen>
+    <dimen name="_500dp">500dp</dimen>
+    <dimen name="_550dp">550dp</dimen>
+    <dimen name="_600dp">600dp</dimen>
+    <dimen name="_650dp">650dp</dimen>
+    <dimen name="_700dp">700dp</dimen>
+
+
+    <dimen name="_0sdp">0sdp</dimen>
+    <dimen name="_1sdp">1sdp</dimen>
+    <dimen name="_2sdp">2sdp</dimen>
+    <dimen name="_3sdp">3sdp</dimen>
+    <dimen name="_4sdp">4sdp</dimen>
+    <dimen name="_5sdp">5sdp</dimen>
+    <dimen name="_8sdp">8sdp</dimen>
+    <dimen name="_10sdp">10sdp</dimen>
+    <dimen name="_16sdp">16sdp</dimen>
+    <dimen name="_20sdp">20sdp</dimen>
+    <dimen name="_24sdp">24sdp</dimen>
+    <dimen name="_30sdp">30sdp</dimen>
+    <dimen name="_32sdp">32sdp</dimen>
+    <dimen name="_40sdp">40sdp</dimen>
+    <dimen name="_45sdp">45sdp</dimen>
+    <dimen name="_50sdp">50sdp</dimen>
+    <dimen name="_55sdp">55sdp</dimen>
+    <dimen name="_60sdp">60sdp</dimen>
+    <dimen name="_65sdp">65sdp</dimen>
+    <dimen name="_70sdp">70sdp</dimen>
+    <dimen name="_75sdp">75sdp</dimen>
+    <dimen name="_80sdp">80sdp</dimen>
+    <dimen name="_85sdp">85sdp</dimen>
+    <dimen name="_90sdp">90sdp</dimen>
+    <dimen name="_95sdp">95sdp</dimen>
+
+    <dimen name="_100sdp">100sdp</dimen>
+    <dimen name="_110sdp">110sdp</dimen>
+    <dimen name="_120sdp">120sdp</dimen>
+    <dimen name="_130sdp">130sdp</dimen>
+    <dimen name="_150sdp">150sdp</dimen>
+    <dimen name="_160sdp">160sdp</dimen>
+    <dimen name="_170sdp">170sdp</dimen>
+    <dimen name="_180sdp">180sdp</dimen>
+    <dimen name="_190sdp">190sdp</dimen>
+
+    <dimen name="_200sdp">200sdp</dimen>
+    <dimen name="_250sdp">250sdp</dimen>
+    <dimen name="_300sdp">300sdp</dimen>
+    <dimen name="_350sdp">350sdp</dimen>
+    <dimen name="_400sdp">400sdp</dimen>
+    <dimen name="_450sdp">450sdp</dimen>
+    <dimen name="_500sdp">500sdp</dimen>
+    <dimen name="_550sdp">550sdp</dimen>
+    <dimen name="_600sdp">600sdp</dimen>
+    <dimen name="_650sdp">650sdp</dimen>
+    <dimen name="_700sdp">700sdp</dimen>
+
+
+    <dimen name="_12sp">12sp</dimen>
+    <dimen name="_14sp">14sp</dimen>
+    <dimen name="_16sp">16sp</dimen>
+    <dimen name="_18sp">18sp</dimen>
+    <dimen name="_20sp">20sp</dimen>
+    <dimen name="_22sp">22sp</dimen>
+    <dimen name="_24sp">24sp</dimen>
+    <dimen name="_26sp">26sp</dimen>
+    <dimen name="_28sp">28sp</dimen>
+    <dimen name="_30sp">30sp</dimen>
+    <dimen name="_32sp">32sp</dimen>
+    <dimen name="_34sp">34sp</dimen>
+    <dimen name="_36sp">36sp</dimen>
+    <dimen name="_38sp">38sp</dimen>
+    <dimen name="_40sp">40sp</dimen>
+
+    <dimen name="_12ssp">12ssp</dimen>
+    <dimen name="_14ssp">14ssp</dimen>
+    <dimen name="_16ssp">16ssp</dimen>
+    <dimen name="_18ssp">18ssp</dimen>
+    <dimen name="_20ssp">20ssp</dimen>
+    <dimen name="_22ssp">22ssp</dimen>
+    <dimen name="_24ssp">24ssp</dimen>
+    <dimen name="_26ssp">26ssp</dimen>
+    <dimen name="_28ssp">28ssp</dimen>
+    <dimen name="_30ssp">30ssp</dimen>
+    <dimen name="_32ssp">32ssp</dimen>
+    <dimen name="_34ssp">34ssp</dimen>
+    <dimen name="_36ssp">36ssp</dimen>
+    <dimen name="_38ssp">38ssp</dimen>
+    <dimen name="_40ssp">40ssp</dimen>
+
+
+
+</resources>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Android Application</string>
+
+    <!--play store-->
+    <string name="app_google_play_store_link">"https://play.google.com/store/apps/details?id="</string>
+    <string name="app_market_link">"market://details?id="</string>
+
+    <string name="default_notification_channel_id">Notification 01</string>
+
+    <!--api key-->
+    <string name="google_maps_api_key"> </string>
+</resources>

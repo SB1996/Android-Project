@@ -1,0 +1,35 @@
+buildscript {
+    ext.kotlin_version = "1.4.20"
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath "com.android.tools.build:gradle:4.1.1"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+
+        /** Google Services Dependency **/
+        classpath "com.google.gms:google-services:4.3.4"
+
+        /** Navigation Component Dependency **/
+        def nav_version = "2.1.0"
+        classpath "androidx.navigation:navigation-safe-args-gradle-plugin:$nav_version"
+
+        /** Hilt Dependency **/
+        def hilt_version = "2.28-alpha"
+        classpath "com.google.dagger:hilt-android-gradle-plugin:$hilt_version"
+
+        classpath "com.google.firebase:firebase-crashlytics-gradle:2.4.1"
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

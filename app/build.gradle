@@ -1,0 +1,197 @@
+plugins {
+    id "com.android.application"
+    id "kotlin-android"
+    id "kotlin-android-extensions"
+    id "kotlin-kapt"
+    id "androidx.navigation.safeargs.kotlin"
+    id "com.google.gms.google-services"
+    id "dagger.hilt.android.plugin"
+    id "com.google.firebase.crashlytics"
+}
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.2"
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
+    signingConfigs {
+        config {
+            storeFile file("C:\\Users\\Banti\\AndroidProjects\\AndroidApplication\\app\\key\\ApplicationKey.jks")
+            keyAlias "ApplicationKey"
+            keyPassword "Santanu@1996"
+            storePassword "Santanu@1996"
+        }
+    }
+
+    buildFeatures {
+        dataBinding = true
+        viewBinding = true
+    }
+
+    defaultConfig {
+        applicationId "com.santanu.android.androidapplication"
+        minSdkVersion 24
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro"
+            signingConfig signingConfigs.config
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro"
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_1_8.toString()
+    }
+}
+
+dependencies {
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    implementation "androidx.core:core-ktx:1.3.2"
+    implementation "androidx.appcompat:appcompat:1.2.0"
+    implementation "androidx.constraintlayout:constraintlayout:2.0.4"
+    implementation "androidx.recyclerview:recyclerview:1.1.0"
+    implementation "androidx.recyclerview:recyclerview-selection:1.1.0-rc03"
+
+    /** Material Design Dependencies **/
+    def material_version = "1.2.1"
+    implementation "com.google.android.material:material:$material_version"
+
+    /** Androidx Activity Dependencies **/
+    def activity_version = "1.1.0"
+    implementation "androidx.activity:activity-ktx:$activity_version"
+
+    /** Androidx Fragment Dependencies **/
+    def fragment_version = "1.2.5"
+    implementation "androidx.fragment:fragment-ktx:$fragment_version"
+    debugImplementation "androidx.fragment:fragment-testing:$fragment_version"
+
+    /** Navigation Component Dependency **/
+    def nav_version = "2.3.2"
+    implementation "androidx.navigation:navigation-fragment-ktx:$nav_version"
+    implementation "androidx.navigation:navigation-ui-ktx:$nav_version"
+
+    /** Coroutines dependencies **/
+    def coroutines_version = "1.3.8"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutines_version"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutines_version"
+
+    /** ViewModel and LiveData **/
+    def lifecycle_version = "2.2.0"
+    def arch_version = "2.1.0"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-savedstate:$lifecycle_version"
+    implementation "androidx.lifecycle:lifecycle-common-java8:$lifecycle_version"
+    testImplementation "androidx.arch.core:core-testing:$arch_version"
+
+    /** DataStore Dependencies **/
+    def datastore_version = "1.0.0-alpha05"
+    implementation "androidx.datastore:datastore:$datastore_version"
+
+    /** Firebase Dependencies **/
+    implementation platform("com.google.firebase:firebase-bom:26.1.1")
+    implementation "com.google.firebase:firebase-analytics-ktx"
+    implementation "com.google.firebase:firebase-crashlytics-ktx"
+    implementation "com.google.firebase:firebase-auth-ktx"
+    implementation "com.google.firebase:firebase-database-ktx"
+    implementation "com.google.firebase:firebase-firestore-ktx"
+    implementation "com.google.firebase:firebase-storage-ktx"
+    implementation "com.google.firebase:firebase-messaging-ktx"
+
+    /** Google Play Services Dependencies **/
+    implementation "com.google.android.gms:play-services-location:17.1.0"
+    implementation "com.google.android.gms:play-services-maps:17.0.0"
+
+    /** Google Map Utils Dependencies **/
+    implementation "com.google.maps.android:maps-utils-ktx:1.7.0"
+
+    /** Google Map Place api Dependencies **/
+    implementation "com.google.android.libraries.places:places:2.4.0"
+
+    /** Dagger Dependency **/
+    def dagger_version = "2.27"
+    implementation "com.google.dagger:dagger:$dagger_version"
+    kapt "com.google.dagger:dagger-compiler:$dagger_version"
+    implementation "com.google.dagger:dagger-android:$dagger_version"
+    implementation "com.google.dagger:dagger-android-support:$dagger_version"
+    kapt "com.google.dagger:dagger-android-processor:$dagger_version"
+
+    /** Hilt Dependency **/
+    def hilt_version = "2.28.1-alpha"
+    def hilt_viewmodel_version = "1.0.0-alpha02"
+    implementation "com.google.dagger:hilt-android:$hilt_version"
+    kapt "com.google.dagger:hilt-android-compiler:$hilt_version"
+    implementation "androidx.hilt:hilt-lifecycle-viewmodel:$hilt_viewmodel_version"
+    kapt "androidx.hilt:hilt-compiler:$hilt_viewmodel_version"
+    androidTestImplementation "com.google.dagger:hilt-android-testing:$hilt_version"
+    kaptAndroidTest "com.google.dagger:hilt-android-compiler:$hilt_version"
+
+    /** Gson Dependencies **/
+    def gson_version = "2.8.6"
+    implementation "com.google.code.gson:gson:$gson_version"
+
+    /** Retrofit Dependencies **/
+    def retrofit_version = "2.9.0"
+    implementation "com.squareup.retrofit2:retrofit:$retrofit_version"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofit_version"
+
+    /** OkHttp3 Logging Interceptor Dependencies **/
+    def logging_interceptor_version = "4.9.0"
+    implementation "com.squareup.okhttp3:logging-interceptor:$logging_interceptor_version"
+
+    /** Room Dependency **/
+    def room_version = "2.2.6"
+    implementation "androidx.room:room-runtime:$room_version"
+    kapt "androidx.room:room-compiler:$room_version"
+    implementation "androidx.room:room-ktx:$room_version"
+    testImplementation "androidx.room:room-testing:$room_version"
+
+    /** Glide Image Loader Dependencies **/
+    def glide_version = "4.11.0"
+    implementation "com.github.bumptech.glide:glide:$glide_version"
+    kapt "com.github.bumptech.glide:compiler:$glide_version"
+
+    /** lottie Dependencies **/
+    def lottieVersion = "3.5.0"
+    implementation "com.airbnb.android:lottie:$lottieVersion"
+
+    /** File[image] Compressor Dependencies **/
+    implementation "id.zelory:compressor:3.0.0"
+
+    /** File[video] Compressor Dependencies **/
+    implementation "com.github.AbedElazizShe:LightCompressor:0.7.4"
+
+    /** loading Dependencies **/
+    implementation "com.github.ybq:Android-SpinKit:1.4.0"
+
+    implementation 'com.itextpdf:itext7-core:7.1.8'
+    implementation "com.itextpdf:itextpdf:5.5.13"
+
+    implementation "com.intuit.sdp:sdp-android:1.0.6"
+
+    testImplementation "junit:junit:4.13.1"
+    androidTestImplementation "androidx.test.ext:junit:1.1.2"
+    androidTestImplementation "androidx.test.espresso:espresso-core:3.3.0"
+}
